@@ -48,18 +48,17 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FedExShippingCostStrategy.cs" />
-    <Compile Include="IShippingCostStrategy.cs" />
-    <Compile Include="Models\Address.cs" />
-    <Compile Include="Helpers\Mother.cs" />
-    <Compile Include="Models\Order.cs" />
-    <Compile Include="ShippingCostCalculatorService.cs" />
-    <Compile Include="Models\ShippingOptions.cs" />
-    <Compile Include="ShippingCostCalculatorServiceTests.cs" />
+    <Compile Include="Domain\ShippingService\FedExShippingCostStrategy.cs" />
+    <Compile Include="Domain\ShippingService\IShippingCostStrategy.cs" />
+    <Compile Include="Domain\Address.cs" />
+    <Compile Include="Test\Mother.cs" />
+    <Compile Include="Domain\Order.cs" />
+    <Compile Include="Domain\ShippingService\ShippingCostCalculatorService.cs" />
+    <Compile Include="Domain\ShippingOptions.cs" />
+    <Compile Include="Test\ShippingCostCalculatorServiceTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UnknownOrderShippingAddressException.cs" />
-    <Compile Include="UPSShippingCostStrategy.cs" />
-    <Compile Include="USPSShippingCostStrategy.cs" />
+    <Compile Include="Domain\ShippingService\UPSShippingCostStrategy.cs" />
+    <Compile Include="Domain\ShippingService\USPSShippingCostStrategy.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
