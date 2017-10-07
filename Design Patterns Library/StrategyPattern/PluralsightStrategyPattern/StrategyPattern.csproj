@@ -48,6 +48,8 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FedExShippingCostStrategy.cs" />
+    <Compile Include="IShippingCostStrategy.cs" />
     <Compile Include="Models\Address.cs" />
     <Compile Include="Helpers\Mother.cs" />
     <Compile Include="Models\Order.cs" />
@@ -56,6 +58,8 @@
     <Compile Include="ShippingCostCalculatorServiceTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UnknownOrderShippingAddressException.cs" />
+    <Compile Include="UPSShippingCostStrategy.cs" />
+    <Compile Include="USPSShippingCostStrategy.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
